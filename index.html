@@ -210,6 +210,50 @@
             margin-top: 20px;
         }
 
+        .comparison-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .comparison-item {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .comparison-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .comparison-item h3 {
+            margin: 0;
+            padding: 24px 28px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            background: #f8f9fa;
+            text-align: left;
+            line-height: 1.5;
+            border-bottom: 3px solid #e9ecef;
+        }
+
+        .comparison-item h3 .highlight {
+            color: #d32f2f;
+            font-weight: 700;
+        }
+        
         .video-card {
             flex: 1 1 45%;
             max-width: auto;
@@ -526,10 +570,48 @@
             <p class="content-text">
                 Illustration of our all-day multi-scenes lifelong VLN Benchmark setting. The normal environment is marked in green color, low light is marked blue, scattering is marked yellow, and overexposure is marked in purple.
             </p>
+        </section>
+        
+        <section class="section experiment-section">
+            <h2 class="section-title">Simulator Setting</h2>
+            <div class="comparison-container">
+                <div class="grid-wrapper">
+                    <!-- Item 1 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Habitat Natural Light<br>Scene Simulator</h3>
+                        <div class="image-container">
+                            <img src="static/normal.gif" alt="Natural lighting scene simulation">
+                        </div>
+                    </div>
 
+                    <!-- Item 2 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Large-Scale Scattering Model<br>Simulating Scene Scattering</h3>
+                        <div class="image-container">
+                            <img src="static/scatter.gif" alt="Scene scattering simulation">
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Camera Response Model Simulating<br>Scene Low Light</h3>
+                        <div class="image-container">
+                            <img src="static/lownight.gif" alt="Low light scene simulation">
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Camera Response Model Simulating<br>Scene Overexposure</h3>
+                        <div class="image-container">
+                            <img src="static/overexpose.gif" alt="Overexposure scene simulation">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section experiment-section">
+        <section class="section">
             <h2 class="section-title">Real-World Experiments</h2>
             <h2 class="section-subtitle">robotic navigation system introduction</h2>
             <div class="image-container">
@@ -625,7 +707,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section experiment-section">
             <h2 class="section-title">Habitat Simulator Experiments</h2>
             <h2 class="section-subtitle">Allday-Habitat simulation platform</h2>
             <div class="image-container">
@@ -1004,7 +1086,7 @@
 
         </section>
 
-        <section class="section experiment-section">
+        <section class="section">
             <h2 class="section-title">Comparison Experiment Results</h2>
             <div class="image-container">
                 <img src="static/result1.png" alt="Main picture">
@@ -1021,7 +1103,7 @@
             </p>
         </section>
 
-        <section class="section">
+        <section class="section experiment-section">
             <h2 class="section-title">Extension Experiments</h2>
             <div class="image-container">
                 <img src="static/result3.png" alt="Main picture">
