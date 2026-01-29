@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All-Day Multi-Scenes Lifelong Vision-And-Language Navigation With Tucker-Adaption</title>
+    <title>Evolving the Prototype Journey: Lifelong Vision-and-Language Navigation with Prototype Adaptation</title>
     <style>
         * {
             margin: 0;
@@ -503,7 +503,7 @@
                 In this paper, we propose <strong>EverWalker</strong>, a lifelong VLN agent designed to thrive 
                 in an ever-changing world by evolving its navigation knowledge through a prototype-driven journey. 
                 Instead of storing independent step-specific adapters, EverWalker introduces a 
-                Dynamic Prototype Bank (DyproBank) that incrementally accumulates compact scene prototypes, 
+                <strong>Dynamic Prototype Bank (DyproBank)</strong> that incrementally accumulates compact scene prototypes, 
                 capturing essential navigation knowledge. Building upon this evolving prototype space, 
                 we further propose a Prototype-conditioned Hypernetwork (PHYP-Net) that dynamically generates 
                 task-adaptive LoRA parameters conditioned on aggregated prototypes, enabling efficient step-specific inference 
@@ -573,7 +573,7 @@
                             <div class="video-overlay">Speed 1X</div>
                         </div>
                         <div class="video-title">
-                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task1</p></h3>
+                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task1</p>Please walk around the left side of the table and enter the living room on the left. From the living room, enter the room on the right and find the bathroom inside. Go into the bathroom.</h3>
                         </div>
                     </div>
 
@@ -590,7 +590,7 @@
                             <div class="video-overlay">Speed 1X</div>
                         </div>
                         <div class="video-title">
-                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task2</p></h3>
+                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task2</p>Go forward, go around the right side of the red ball, then go around the left side of the yellow railing, and continue forward until you find the red cylinder.</h3>
                         </div>
                     </div>
                 </div>
@@ -610,7 +610,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task3</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task3</p>Find the hallway, go through the hallway between the cabinet and the water dispenser, keep walking straight, go through the door at the end of the hallway, and stop at the entrance to the living room.</h3>
                     </div>
 
                     <!-- right video -->
@@ -625,7 +625,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task4</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task4</p>Walk straight ahead from the bar on the right, go through the door in front, turn right and enter the rightmost room, stop in front of the wardrobe in the room.</h3>
                     </div>
                 </div>
             </div>
@@ -644,7 +644,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task5</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task5</p>Walk forward, passing between the yellow cones and the blue cylinders, then continue forward, passing to the left of the white soccer ball, and stop in front of the red ball.</h3>
                     </div>
 
                     <!-- right video -->
@@ -659,7 +659,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task6</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task6</p>Exit the room through the door, walk into the hallway on the left, walk forward and turn left into the living room on the left, then stop in front of the dining table on the right side of the living room.</h3>
                     </div>
                 </div>
             </div>
@@ -678,7 +678,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task7</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task7</p>Enter the bedroom from your current location, exit through the other door, then walk into the hall and turn left to the entrance door of the hall.</h3>
                     </div>
 
                     <!-- right video -->
@@ -693,7 +693,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task8</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task8</p>Find the exit from your current location, go through the door into the living room, turn right after exiting the door, and find the piano in the corner against the wall.</h3>
                     </div>
                 </div>
             </div>
@@ -712,7 +712,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task9</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task9</p>After leaving the house, walk into the living room, then turn right and walk to the entrance of the room on the left side of the stairs, then stop.</h3>
                     </div>
 
                     <!-- right video -->
@@ -727,7 +727,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task10</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task10</p>Walk forward, passing the two yellow traffic cones to the left. You'll then see a red traffic cone; pass it to the right. Continue walking forward until you stop in front of the yellow traffic cone near the window.</h3>
                     </div>
                 </div>
             </div>
@@ -746,7 +746,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task11</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task11</p>Walk straight ahead along the corridor, looking at the wall, passing through these office areas, and finally stop next to the washbasin in front of the door.</h3>
                     </div>
 
                     <!-- right video -->
@@ -761,7 +761,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task12</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task12</p>Enter the house from the balcony, walk straight ahead along the wall in the living room, then turn right, and continue walking forward until you reach the door to the two bedrooms.</h3>
                     </div>
                 </div>
             </div>
@@ -780,7 +780,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task13</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task13</p>Walk forward, passing between the yellow and red cones, then continue forward, passing to the right of the red ball, until you reach the red soccer ball next to the cardboard box.</h3>
                     </div>
 
                     <!-- right video -->
@@ -795,7 +795,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task14</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task14</p>Go out of the kitchen, walk to the dining room, turn left, and stop at the sofa in the living room.</h3>
                     </div>
                 </div>
             </div>
@@ -814,7 +814,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task15</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task15</p>First, exit this room and enter another room to the left of the stairs, eventually stopping in front of the bed.</h3>
                     </div>
 
                     <!-- right video -->
@@ -829,7 +829,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task16</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task16</p>Walk forward to the landing at the top of the stairs, enter the room on the right, then turn left and enter the bathroom. Stop inside.</h3>
                     </div>
                 </div>
             </div>
@@ -848,7 +848,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task17</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task17</p>Turn right from your current position, walk straight ahead along the wall and cabinets, enter the kitchen through the door, then enter the dining room from the right, walk straight ahead along the left wall, and finally enter the wine storage room.</h3>
                     </div>
 
                     <!-- right video -->
@@ -863,7 +863,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task18</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task18</p>First, find the exit of the current room, go out through the door, then continue forward until you reach the left side of the stairs. Stop at the entrance of the room on the left.</h3>
                     </div>
                 </div>
             </div>
@@ -886,7 +886,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task19</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task19</p>Exit through the door on the right, then walk to the right front into the living room. Exit through the door to the left of the guest chair and stop at the doorway.</h3>
                     </div>
 
                     <!-- right video -->
@@ -901,7 +901,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task20</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task20</p>Walk forward along the ramp, around the obstacle, go around the yellow railing to the left, continue forward, turn left, and finally stop in front of the red traffic cones.</h3>
                     </div>
                 </div>
             </div>
@@ -920,7 +920,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task21</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task21</p>After entering, walk straight ahead in the lobby until you see a corridor. Enter the first room on the left side of the corridor and stop at the door of the room.</h3>
                     </div>
 
                     <!-- right video -->
@@ -935,7 +935,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task22</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task22</p>After leaving the kitchen, walk straight up the stairs. After going downstairs, enter the hallway on your right. At the end of the hallway, turn right and stop next to the chair.</h3>
                     </div>
                 </div>
             </div>
@@ -955,7 +955,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task23</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task23</p>Walk straight along the tactile paving, go around the orange traffic cones to the right to avoid bumping into the red pillar, cross the yellow railing to the right, walk forward a bit, and finally stop in front of the pillar.</h3>
                     </div>
 
                     <!-- right video -->
@@ -970,7 +970,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task24</p></h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task24</p>After coming down the stairs, walk straight ahead, then turn right and walk straight along the right-hand wall until you enter the restroom on the right. Finally, stop in front of the sink.</h3>
                     </div>
                 </div>
             </div>
@@ -1010,7 +1010,7 @@
             <p class="content-text">
                 Evolving generalization. Average SR on unseen Tasks 19--24 evaluated after training milestones (T3, 6, 9, 12, 15, 18). It improves from 52.8% to 62.2%, while baselines plateau or decline.
             </p>
-            <h2 class="section-subtitle">For more ablation experimental analysis, please refer to the main text and appendices of our paper. </h2>
+            <h2 class="section-subtitle" style="font-size: 1.5rem;">For more ablation experimental analysis, please refer to the main text and Appendix of our paper. </h2>
         </section>
     </div>
 </body>
